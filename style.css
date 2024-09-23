@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    background-color: rgba(161, 161, 161, 0.329);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; 
+    backdrop-filter: blur(5px);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-logo {
+    flex-grow: 1; 
+    text-align: center; 
+    filter: brightness(0) invert(1);
+}
+
+.nav-logo img {
+    max-height: 50px; 
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.nav-icons img {
+    width: 24px; 
+    height: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-image: url('Background.jpg'); 
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; 
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block; 
+}
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+.logo p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.shop-button {
+    background: linear-gradient(to right, #ACACAC, #E7E7E7);
+    color: #000000; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background 0.3s;
+}
+
+.shop-button:hover {
+    background: linear-gradient(to right, #1f1cd4, #0056b3); 
+}
+
+.shop-button:active {
+    background-color: #004494;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.product {
+    background-color: #ffffff; 
+    color: #000; 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px; 
+    text-align: center; 
+    flex: 1 1 200px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeIn 0.5s forwards; /* Durasi 0.5 detik */
+}
+
+.product img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.more-button {
+    background-color: #ffffff; 
+    color: #000; 
+    border: 1px solid #ccc; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    margin-top: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.more-button:hover {
+    background-color: #f0f0f0; 
+}
+
+.footer-image {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.footer-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #795548;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}

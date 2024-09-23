@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login_style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="login-container">
+            <div class="close-button" onclick="window.location.href='index.html'">
+                <div class="circle">
+                    ✖
+                </div>
+            </div>
+            <h1>Log in</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="emailOrPhone" placeholder="Email/No.Telp" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-button">Log In</button>
+                <p class="forgot-password">Forgot Password?</p>
+            </form>
+        </div>
+    </div>
+    <script src="Login_script.js"></script>
+</body>
+</html>
